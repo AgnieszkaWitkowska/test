@@ -4,16 +4,22 @@
         int main(){
 
     int a;
-    int licznik_petli;
 
-            for ( a = 100; a >= 1; a-=2) {
-                {
-            printf("Liczby naturalne od 100 do 1 to: %d\n",a);}
+printf("Podaj liczbę mniejszą niż 20, a wiekszą niż 0: \n");
+scanf("%d", &a);
+
+if (!(a%2)) --a;
+for(; a>0; a-=2)
+{
+    if ((!a%2)) continue;
+        if (!(a%3)) continue;
+        if (!(a%5)) continue;
+        if (!(a%7)) continue;
+
+printf("%d ", a);}
 
 
-           licznik_petli++; }
-           printf("\n");
-            printf("liczba pętli wynosi t: %d\n", licznik_petli);
+
 
     return 0;
 
